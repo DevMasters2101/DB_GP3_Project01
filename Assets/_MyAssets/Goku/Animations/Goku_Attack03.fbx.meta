@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 20fd307fded48c74b8e5a31d2a3e9b63
+guid: 94c743987a320474893f717209fffa11
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: -3419257869308726280
-    second: walk
+      74: -517454539092039161
+    second: Attack03
   externalObjects: {}
   materials:
     materialImportMode: 0
@@ -22,18 +22,16 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween bone
       rotation in copied configuration does not match rotation in animation file:\n\t'Goku_r_Leg_BallSHJnt'
-      : rotation error = 38.699696 deg\n"
+      : rotation error = 7.199909 deg\n"
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'walk' has import animation warnings that might
-      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
-      retargeting quality.\n\t'Goku_Spine_01SHJnt' has translation animation that
-      will be discarded.\n\t'Goku_Spine_02SHJnt' has translation animation that will
-      be discarded.\n\t'Goku_Spine_TopSHJnt' has translation animation that will
-      be discarded.\n\t'Goku_Hair1_AuxSHJnt' has translation animation that will
-      be discarded.\n\t'Goku_Hair3_AuxSHJnt' has translation animation that will
-      be discarded.\n\t'Goku_l_Leg_BallSHJnt' is inbetween humanoid transforms and
-      has rotation animation that will be discarded.\n\t'Goku_r_Leg_BallSHJnt' is
-      inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: "\nClip 'Attack03' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Goku_Spine_01SHJnt' has translation animation
+      that will be discarded.\n\t'Goku_Spine_02SHJnt' has translation animation that
+      will be discarded.\n\t'Goku_Spine_TopSHJnt' has translation animation that
+      will be discarded.\n\t'Goku_l_Leg_BallSHJnt' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Goku_r_Leg_BallSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -47,21 +45,21 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: walk
-      takeName: walk
+      name: Attack03
+      takeName: Attack03
       internalID: 0
       firstFrame: 1
-      lastFrame: 30
+      lastFrame: 90
       wrapMode: 0
-      orientationOffsetY: 0
+      orientationOffsetY: -96.26
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
-      loopBlendPositionY: 1
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 1
       keepOriginalPositionY: 0
