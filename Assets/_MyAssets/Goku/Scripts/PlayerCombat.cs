@@ -20,7 +20,7 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("AttackButton"))
+        if (Input.GetButtonDown("Fire1"))
         {
             Attack();
         }
@@ -30,11 +30,11 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
-        if(Time.time - lastComboEnd > 0.2f && comboCounter <= combo.Count)
+        if(Time.time - lastComboEnd > 1f && comboCounter <= combo.Count)
         {
             CancelInvoke("EndCombo");
 
-            if(Time.time - lastClickedTime >= 0.2f)
+            if(Time.time - lastClickedTime >= 1f)
             {
                 anim.runtimeAnimatorController = combo[comboCounter].animatorOV;
                 anim.Play("Attack", 0, 0);
@@ -44,6 +44,7 @@ public class PlayerCombat : MonoBehaviour
                 if(comboCounter >= combo.Count)
                 {
                     comboCounter = 0;
+                    lastComboEnd = Time.time;
                 }
             }
         }
