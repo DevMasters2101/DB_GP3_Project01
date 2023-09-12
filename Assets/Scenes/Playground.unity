@@ -1523,6 +1523,7 @@ GameObject:
   - component: {fileID: 5885216829670671795}
   - component: {fileID: 135756641613574975}
   - component: {fileID: 4416926083347132239}
+  - component: {fileID: 6982812147933622148}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -1728,6 +1729,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6982812147933622148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416926083347132227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90cc8fb36120f94198ec7d7321672d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combo:
+  - {fileID: 11400000, guid: 0a2dc1a9db016d4438c17b022442f16c, type: 2}
+  - {fileID: 11400000, guid: 428cd067143415f4a929d3206782971c, type: 2}
+  - {fileID: 11400000, guid: 6ae40fbf98289ae4c8f558094c2c496d, type: 2}
 --- !u!1 &8338988565591873048
 GameObject:
   m_ObjectHideFlags: 0

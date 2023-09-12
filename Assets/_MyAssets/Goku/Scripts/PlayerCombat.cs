@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerCombat : MonoBehaviour
     float lastClickedTime;
     float lastComboEnd;
     int comboCounter;
+    private PlayerInput playerInput;
+    private InputAction attackAction;
 
     Animator anim;
 
@@ -15,12 +18,14 @@ public class PlayerCombat : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        playerInput = GetComponent<PlayerInput>();
+        attackAction = playerInput.actions["AttackButton"];
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (attackAction.triggered)
         {
             Attack();
         }
@@ -37,7 +42,7 @@ public class PlayerCombat : MonoBehaviour
             if(Time.time - lastClickedTime >= 1f)
             {
                 anim.runtimeAnimatorController = combo[comboCounter].animatorOV;
-                anim.Play("Attack", 0, 0);
+                anim.Play("Attack01", 0, 0);
                 comboCounter++;
                 lastClickedTime = Time.time;    
 
