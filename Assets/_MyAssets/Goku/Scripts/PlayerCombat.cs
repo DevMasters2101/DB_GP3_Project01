@@ -19,7 +19,6 @@ public class PlayerCombat : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
-        attackAction = playerInput.actions["AttackButton"];
     }
 
     // Update is called once per frame
